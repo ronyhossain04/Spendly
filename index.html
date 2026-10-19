@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spendly - Track. Understand. Grow.</title>
+  <meta name="description" content="Spendly is an elegant, offline-first personal finance tracker and budget planner.">
+  <style>
+    :root {
+      --primary: #F97316;
+      --primary-dark: #C2410C;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text: #0F172A;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #FB923C;
+        --primary-dark: #EA580C;
+        --bg: #0F172A;
+        --card-bg: #1E293B;
+        --text: #F8FAFC;
+        --text-muted: #94A3B8;
+        --border: #334155;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.12);
+      color: var(--primary);
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2.75rem;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+      font-weight: 800;
+    }
+    .tagline {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 2.5rem auto;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+      text-align: left;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+    }
+    .feature-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    footer {
+      background: var(--card-bg);
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 0.75rem;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Spendly</a>
+    <nav class="nav-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Use</a>
+      <a href="app-ads.txt">app-ads.txt</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero-badge">100% Local-First &amp; Private</div>
+    <h1>Track. Understand. Grow.</h1>
+    <p class="tagline">
+      Spendly is a modern, intuitive personal expense and budget management application designed to give you clarity and control over your financial journey.
+    </p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>100% Private</h3>
+        <p>No account registration or cloud databases. Your financial records never leave your device.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Smart Budgets &amp; Goals</h3>
+        <p>Set custom category limits, track recurring bills, and achieve your financial savings milestones.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Rich Analytics</h3>
+        <p>Interactive charts, visual spending summaries, and insightful breakdowns to understand where money goes.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Spendly. Developed by Rony Hossain.</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="privacy-policy.html">Privacy Policy</a> &bull;
+      <a href="terms-of-use.html">Terms of Use</a> &bull;
+      <a href="app-ads.txt">app-ads.txt</a> &bull;
+      <a href="mailto:ronyhossain16256@gmail.com">Contact Support</a>
+    </p>
+  </footer>
+</body>
+</html>
